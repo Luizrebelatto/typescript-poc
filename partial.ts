@@ -5,6 +5,6 @@ interface Animal {
     specie: string
 }
 
-function updateAnimeal(animal: Animal, updateAnimal: Partial<Animal>): Animal {
+function updateAnimal(animal: Animal, updateAnimal: Partial<Animal>): Animal {
     return {...animal, ...updateAnimal}
 }
