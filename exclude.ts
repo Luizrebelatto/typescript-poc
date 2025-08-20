@@ -1,7 +1,3 @@
-interface Product {
-    id: number;
-    name: string;
-    category: string;
-}
+type Status = "enable" | "disable" | "off"
 
-type newProduct = Exclude<keyof Product, "category">
+type ApenasAtivos = Exclude<Status, "off">
